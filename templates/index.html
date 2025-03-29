@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentiment Analysis</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Sentiment Analysis for Product Reviews</h1>
+    
+    <form method="POST">
+        <label>Enter a Review:</label>
+        <input type="text" name="review" required>
+        <button type="submit">Analyze</button>
+    </form>
+
+    {% if sentiment %}
+        <h2>Sentiment: {{ sentiment }}</h2>
+        <p>Review: {{ review }}</p>
+    {% endif %}
+
+    <h2>Upload CSV for Bulk Analysis</h2>
+    <form method="POST" enctype="multipart/form-data">
+        <input type="file" name="file" accept=".csv">
+        <button type="submit">Upload and Analyze</button>
+    </form>
+
+    {% if table %}
+        <h2>Analysis Results</h2>
+        {{ table|safe }}
+    {% endif %}
+</body>
+</html>
