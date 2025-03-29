@@ -79,14 +79,24 @@ python app.py
 
 ## **📷 Screenshots**
 ### **🔹 Sentiment Analysis UI**
-![UI Example](https://www.dataquest.io/wp-content/uploads/2022/04/nlp-tutorial.png)
+<img width="959" alt="Screenshot 2025-03-30 012517" src="https://github.com/user-attachments/assets/0329e9c3-b84b-4774-8f96-05fe6eaa5420" />
+
+<img width="959" alt="Screenshot 2025-03-30 012603" src="https://github.com/user-attachments/assets/503f36ec-0821-4ae3-9310-91e1df237271" />
 
 ### **🔹 Bulk CSV Analysis Example**
+
+<img width="959" alt="Screenshot 2025-03-30 012806" src="https://github.com/user-attachments/assets/f68c6d6a-04c7-432e-8e63-d594b509d9d7" />
+
 | Review | Sentiment |
 |--------|-----------|
 | "I love this product!" | Positive |
 | "The battery drains too fast." | Negative |
 | "It’s okay, nothing special." | Neutral |
+
+
+## **🎥Video Link**
+
+https://youtu.be/CpuzZtgO3YE
 
 ## **📡 API Usage (Optional)**
 ### **🟢 Endpoint: `POST /analyze`**
